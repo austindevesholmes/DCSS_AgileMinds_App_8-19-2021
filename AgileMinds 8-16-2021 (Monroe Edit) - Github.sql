@@ -11,7 +11,6 @@ course_num AS Course,
 period_num AS 'Class/Period' ,  
 it.firstname + ' ' + it.lastname as 'Teacher' 
 
-
 FROM p
 JOIN i with(nolock) on i.identityID = p.currentidentityID
 JOIN e with(nolock) on e.personID = p.personID
